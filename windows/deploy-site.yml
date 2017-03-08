@@ -5,7 +5,7 @@
 
   gather_facts: false
   tasks:
-    - name: Download simple web site to 'C:\inetpub\wwwroot\ansible.html'
+    - name: Download simple web site to 'C:\inetpub\wwwroot\index.html'
       win_get_url:
         url: 'https://raw.githubusercontent.com/jedrington/ansible-examples/master/windows/files/index.html'
         dest: 'C:\inetpub\wwwroot\index.html'
