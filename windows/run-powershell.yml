@@ -7,3 +7,6 @@
   tasks:
     - name: Run powershell script
       script: files/helloworld.ps1
+      register: out
+
+    - debug: var=out.stdout_lines
